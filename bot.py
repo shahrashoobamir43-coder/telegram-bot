@@ -1,8 +1,9 @@
 import telebot
 import requests
+import os
 
-TELEGRAM_TOKEN = "8273287076:AAEDG2pjUF-b67FwzSd7qpi8umGlBAk74H4"
-OPENROUTER_KEY = "5427733464c75ce7be20a260a7ce4db691570e615b3ddcfd6e6aa2aee3a6581f"
+TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")
+OPENROUTER_KEY = os.environ.get("OPENROUTER_KEY")
 
 bot = telebot.TeleBot(TELEGRAM_TOKEN)
 
